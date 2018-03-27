@@ -1,0 +1,16 @@
+{
+  "extends": "stylelint-config-pagarme-react",
+  "rules": {
+    "no-extra-semicolons": true,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "each",
+          "mixin",
+          "define-mixin"
+        ]
+      }
+    ]
+  }
+}
