@@ -23,6 +23,8 @@ Repository tags
   - [x] ESLint
   - [x] ESLint React
   - [ ] Hot Reload
+  - [x] ESLint
+  - [x] StyleLint
 - [x] Test automation
   - [x] Jest
   - [ ] Nightwatch Js
