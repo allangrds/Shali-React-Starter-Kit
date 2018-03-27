@@ -10,6 +10,15 @@ module.exports = (env, argv) => ({
     filename: 'app.js',
     publicPath: '/',
   },
+  resolve: {
+    alias: {
+      Stories: path.resolve(__dirname, 'src/stories/'),
+      Styles: path.resolve(__dirname, 'src/styles/'),
+      Tests: path.resolve(__dirname, 'src/tests/'),
+      Client: path.resolve(__dirname, 'src/client/'),
+    },
+    extensions: ['.js', '.jsx', '.css'],
+  },
   module: {
     rules: [
       {

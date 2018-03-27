@@ -90,16 +90,16 @@
 /*!*************************************!*\
   !*** ./node_modules/react/index.js ***!
   \*************************************/
-/*! no static exports found */function(module,exports,__webpack_require__){"use strict";eval('\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "./node_modules/react/cjs/react.development.js");\n}\n\n\n//# sourceURL=webpack:///./node_modules/react/index.js?')},"./src/App.css":
-/*!*********************!*\
-  !*** ./src/App.css ***!
-  \*********************/
-/*! no static exports found */function(module,exports){eval('// removed by extract-text-webpack-plugin\nmodule.exports = {"app":"-App-app-NghkZ4-","app-full":"-App-app-full-s5ugUh-"};\n\n//# sourceURL=webpack:///./src/App.css?')},"./src/App.js":
-/*!********************!*\
-  !*** ./src/App.js ***!
-  \********************/
-/*! no static exports found */function(module,exports,__webpack_require__){"use strict";eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _App = __webpack_require__(/*! ./App.css */ \"./src/App.css\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    'div',\n    { className: _App2.default.app },\n    _react2.default.createElement(\n      'p',\n      null,\n      'React here!'\n    )\n  );\n};\nexports.default = App;\n\n_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));\n\n//# sourceURL=webpack:///./src/App.js?")},"./src/index.js":
+/*! no static exports found */function(module,exports,__webpack_require__){"use strict";eval('\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "./node_modules/react/cjs/react.development.js");\n}\n\n\n//# sourceURL=webpack:///./node_modules/react/index.js?')},"./src/client/App.css":
+/*!****************************!*\
+  !*** ./src/client/App.css ***!
+  \****************************/
+/*! no static exports found */function(module,exports){eval('// removed by extract-text-webpack-plugin\nmodule.exports = {"app":"-App-app-2SYhsJ-","app-full":"-App-app-full-bWAI95-"};\n\n//# sourceURL=webpack:///./src/client/App.css?')},"./src/client/App.js":
+/*!***************************!*\
+  !*** ./src/client/App.js ***!
+  \***************************/
+/*! no static exports found */function(module,exports,__webpack_require__){"use strict";eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _App = __webpack_require__(/*! ./App.css */ \"./src/client/App.css\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    'div',\n    { className: _App2.default.app },\n    _react2.default.createElement(\n      'p',\n      null,\n      'React here!'\n    )\n  );\n};\nexports.default = App;\n\n_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));\n\n//# sourceURL=webpack:///./src/client/App.js?")},"./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */function(module,exports,__webpack_require__){"use strict";eval('\n\nvar _App = __webpack_require__(/*! ./App */ "./src/App.js");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?')}});
+/*! no static exports found */function(module,exports,__webpack_require__){"use strict";eval('\n\nvar _App = __webpack_require__(/*! ./client/App */ "./src/client/App.js");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?')}});
