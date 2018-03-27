@@ -17,18 +17,18 @@ Repository tags
 - [x] Task Builder
   - [x] Webpack
 - [x] Libraries
-  - [x] React
-  - [ ] React Router
   - [x] Babel
   - [x] ESLint
   - [x] ESLint React
   - [ ] Hot Reload
-  - [x] ESLint
+  - [x] React
+  - [ ] React Router
+  - [x] Storybook
   - [x] StyleLint
 - [x] Test automation
   - [x] Jest
   - [ ] Nightwatch Js
-- [ ] CSS
+- [x] CSS
   - [x] PostCSS
   - [x] CSS Modules
 
