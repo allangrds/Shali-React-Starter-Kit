@@ -1,5 +1,9 @@
+![Shali - React Starter Kit](url)
+===
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/allangrds/Shali-React-Starter-Kit/blob/master/LICENSE)
+[![devDependencies Status](https://david-dm.org/allangrds/shali-react-starter-kit/dev-status.svg)](https://david-dm.org/allangrds/shali-react-starter-kit?type=dev)
+
 Repository description
-Repository tags
 
 # Table of contents
 1. [Requirements](#requirements)
@@ -28,7 +32,7 @@ Repository tags
   - [x] StyleLint
 - [x] Test automation
   - [x] Jest
-  - [ ] Nightwatch Js
+  - [x] Nightwatch Js
 - [x] CSS
   - [x] PostCSS
   - [x] CSS Modules
@@ -48,3 +52,4 @@ src/
 ## Testing
 ## Style
 ## Configuration
+After install dependencies from `package.json`, run `npm run e2e-tests` or `yarn e2e-tests`, to install required selenium drivers.
