@@ -12,6 +12,7 @@ Repository tags
 ## Requirements
 - node `^9.8.0`
 - npm `^5.6.0`
+- yarn `^1.5.1`
 
 ## Features & Tools
 - [x] Task Builder

@@ -102,4 +102,4 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */function(module,exports,__webpack_require__){"use strict";eval('\n\nvar _App = __webpack_require__(/*! ./client/App */ "./src/client/App.js");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?')}});
+/*! no static exports found */function(module,exports,__webpack_require__){"use strict";eval('\n\nvar _App = __webpack_require__(/*! Client/App */ "./src/client/App.js");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?')}});
