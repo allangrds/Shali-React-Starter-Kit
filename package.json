@@ -50,7 +50,7 @@
     "storybook": "start-storybook -p 9001",
     "storybook-deploy": "storybook-to-ghpages",
     "lint": "eslint './{src,stories}/**/*.js' && stylelint './{src,stories}/**/*.css'",
-    "test": "nightwatch",
+    "test": "jest --coverage && nightwatch",
     "precommit": "yarn lint && jest",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
