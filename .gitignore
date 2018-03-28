@@ -60,3 +60,4 @@ typings/
 # public files
 public/
 
+reports/*
