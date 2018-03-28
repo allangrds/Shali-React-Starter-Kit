@@ -21,7 +21,7 @@ Repository tags
   - [x] Babel
   - [x] ESLint
   - [x] ESLint React
-  - [ ] Hot Reload
+  - [x] Hot Reload
   - [x] React
   - [ ] React Router
   - [x] Storybook
