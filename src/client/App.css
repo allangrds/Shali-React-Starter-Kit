@@ -1,8 +1,10 @@
-@import "../styles/index.css"
+@import "../styles/index.css";
 
-.app
-  background-color: red
+.app {
+  background-color: red;
+}
 
-.app-full
-  width: 100%
-  border-radius: 10px
+.app-full {
+  width: 100%;
+  border-radius: 10px;
+}

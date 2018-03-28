@@ -58,5 +58,5 @@ typings/
 .env
 
 # public files
-public/assets/
+public/
 
