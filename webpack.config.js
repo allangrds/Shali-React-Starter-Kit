@@ -6,8 +6,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 module.exports = (env, argv) => ({
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, './public/assets/js'),
-    filename: 'app.js',
+    path: path.resolve(__dirname, './public/assets/'),
+    filename: 'js/app.js',
     publicPath: '/',
   },
   resolve: {
@@ -61,14 +61,20 @@ module.exports = (env, argv) => ({
     }),
     new HtmlWebPackPlugin({
       template: './src/index.html',
-      filename: './../../index.html',
+      filename: './index.html',
       inject: 'body',
       cache: true,
       hash: argv.mode === 'production' && true,
     }),
     new ExtractTextPlugin({
-      filename: '../css/app.css',
+      filename: './css/app.css',
       allChunks: true,
     }),
   ],
+  devServer: {
+    inline: true,
+    contentBase: './public',
+    port: 3000,
+    historyApiFallback: true
+  },
 })
