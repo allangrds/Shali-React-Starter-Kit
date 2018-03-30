@@ -47,6 +47,13 @@ module.exports = (env, argv) => ({
           ],
         }),
       },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]',
+        },
+      },
     ],
   },
   plugins: [
@@ -75,6 +82,6 @@ module.exports = (env, argv) => ({
     inline: true,
     contentBase: './public',
     port: 3000,
-    historyApiFallback: true
+    historyApiFallback: true,
   },
 })

@@ -4,7 +4,8 @@ import styles from './App.css'
 
 const App = () => (
   <div className={styles.app}>
-    <p>React here!</p>
+    <p>React here 2!</p>
+    <p className={styles.teste}>React here 2!</p>
   </div>
 )
 export default App
