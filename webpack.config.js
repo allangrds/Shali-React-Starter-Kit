@@ -1,23 +1,29 @@
 const path = require('path')
+const paths = require('./src/config/paths')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = (env, argv) => ({
-  entry: './src/index.js',
+  entry: paths.appIndexJs,
   output: {
-    path: path.resolve(__dirname, './public/assets/'),
+    path: paths.appBuild,
+    pathinfo: true,
     filename: 'js/app.js',
-    publicPath: '/',
   },
   resolve: {
     alias: {
-      Stories: path.resolve(__dirname, 'src/stories/'),
-      Styles: path.resolve(__dirname, 'src/styles/'),
-      Tests: path.resolve(__dirname, 'src/tests/'),
-      Client: path.resolve(__dirname, 'src/client/'),
+      atoms: path.resolve(__dirname, 'src/client/atoms/'),
+      client: path.resolve(__dirname, 'src/client/'),
+      fonts: path.resolve(__dirname, 'src/fonts/'),
+      helpers: path.resolve(__dirname, 'src/helpers/'),
+      images: path.resolve(__dirname, 'src/images/'),
+      molecules: path.resolve(__dirname, 'src/client/molecules/'),
+      stories: path.resolve(__dirname, 'src/stories/'),
+      styles: path.resolve(__dirname, 'src/styles/'),
+      tests: path.resolve(__dirname, 'src/tests/'),
     },
-    extensions: ['.js', '.jsx', '.css'],
+    extensions: ['.js', '.jsx', '.css', '.png', '.jpg', '.gif', '.jpeg'],
   },
   module: {
     rules: [
@@ -27,6 +33,7 @@ module.exports = (env, argv) => ({
         use: {
           loader: 'babel-loader',
         },
+        include: paths.appSrc,
       },
       {
         test: /\.html$/,
@@ -46,12 +53,30 @@ module.exports = (env, argv) => ({
             'postcss-loader',
           ],
         }),
+        include: paths.appSrc,
       },
       {
-        test: /\.(ttf|eot|woff|woff2)$/,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]',
+        test: /\.(jpg|png|gif|jpeg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]',
+            outputPath: 'images',
+            publicPath: 'images',
+            context: 'src/assets/images',
+          },
+        },
+      },
+      {
+        test: /\.(woff|ttf)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]',
+            outputPath: 'fonts',
+            publicPath: '../fonts',
+            context: 'src/assets/fonts',
+          },
         },
       },
     ],
@@ -74,7 +99,7 @@ module.exports = (env, argv) => ({
       hash: argv.mode === 'production' && true,
     }),
     new ExtractTextPlugin({
-      filename: './css/app.css',
+      filename: 'css/app.css',
       allChunks: true,
     }),
   ],

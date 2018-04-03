@@ -1,1 +1,1 @@
-import App from 'Client/App'
+import App from 'client/App'

@@ -1,0 +1,8 @@
+@import "../assets/styles/index.css";
+
+.button {
+  border: none;
+  background: blue;
+  color: #fff;
+  font-family: "Roboto";
+}
