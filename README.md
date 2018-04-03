@@ -23,6 +23,7 @@ Repository description
   - [x] Webpack
 - [x] Libraries
   - [x] Babel
+  - [ ] Classnames
   - [x] ESLint
   - [x] ESLint React
   - [x] Hot Reload
