@@ -1,14 +1,6 @@
 @import "../assets/styles/index.css";
 
-.app {
-  background-color: red;
-}
-
-.teste {
-  font-family: "Roboto";
-}
-
-.app-full {
-  width: 100%;
-  border-radius: 10px;
+.App {
+  display: flex;
+  flex-direction: column;
 }
